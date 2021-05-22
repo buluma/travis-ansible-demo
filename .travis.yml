@@ -4,8 +4,8 @@ sudo: required
 env:
   - distribution: centos
     version: 7
-  - distribution: fedora
-    version: 34
+  # - distribution: fedora
+    # version: 34
   - distribution: fedora
     version: 29
   - distribution: fedora
