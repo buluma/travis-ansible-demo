@@ -34,7 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      on: push
       
   # This workflow contains a single job called "molecule"
       - name: Run .travis.yml build script
