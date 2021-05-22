@@ -37,11 +37,13 @@ jobs:
       on: push
       
   # This workflow contains a single job called "molecule"
-  molecule:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          path: "${{ github.repository }}"
-      - uses: gofrolist/molecule-action@v2
-
+      - name: Run .travis.yml build script
+      uses: ktomk/run-travis-yml@v1
+      with:
+        file: .travis.yml
+        steps: |
+          install
+          script
+        allow-failure: false
+      env:
+        TRAVIS_PHP_VERSION: ${{ matrix.php-versions }}
