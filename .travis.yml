@@ -3,33 +3,33 @@ sudo: required
 sudo: true
 
 env:
-  - distribution: centos
-    version: 7
+  # - distribution: centos
+    # version: 7
   - distribution: fedora
     version: 34
   - distribution: fedora
     version: 30
-  - distribution: fedora
-    version: 29
-  - distribution: fedora
-    version: 28
-  - distribution: fedora
-    version: 27
-  - distribution: fedora
-    version: 26
   # - distribution: fedora
+    # version: 29
+  # - distribution: fedora
+    # version: 28
+  # - distribution: fedora
+    # version: 27
+  # - distribution: fedora
+    # version: 26
+  # - distribution: fedora $bad
     # version: 25
-  # - distribution: fedora
+  # - distribution: fedora $bad
     # version: 24
-  - distribution: ubuntu
-    version: bionic
-  - distribution: ubuntu
-    version: xenial
-  - distribution: ubuntu
+ # - distribution: ubuntu
+  #  version: bionic
+  #- distribution: ubuntu
+  #  version: xenial
+  #- distribution: ubuntu
     version: trusty
-  # - distribution: debian
+  # - distribution: debian $bad
     # version: stretch
-  # - distribution: debian
+  # - distribution: debian $bad
     # version: jessie
 
 services:
