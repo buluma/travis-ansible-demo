@@ -8,6 +8,8 @@ env:
   - distribution: fedora
     version: 34
   - distribution: fedora
+    version: 32
+  - distribution: fedora
     version: 30
   # - distribution: fedora
     # version: 29
